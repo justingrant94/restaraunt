@@ -60,7 +60,6 @@ const Product = () => {
             <input
               className={styles.checkbox}
               type="checkbox"
-              src="/img/tomato.png"
               id="cheese"
               name="cheese"
             />
