@@ -45,7 +45,7 @@ const Product = () => {
 
 
         </div>
-        <h3 className={styles.choose}>Choose additional ingredients</h3>
+        <h3 className={styles.choose}>Add Extras</h3>
         <div className={styles.ingredients}>
           <div className={styles.option}>
             <input
@@ -60,6 +60,7 @@ const Product = () => {
             <input
               className={styles.checkbox}
               type="checkbox"
+              src="/img/tomato.png"
               id="cheese"
               name="cheese"
             />
