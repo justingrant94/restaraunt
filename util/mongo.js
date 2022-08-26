@@ -1,5 +1,7 @@
 import mongoose from 'mongoose'
 
+// https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/lib/dbConnect.js
+
 const MONGODB_URL = process.env.MONGODB_URL
 
 if (!MONGODB_URL) {
