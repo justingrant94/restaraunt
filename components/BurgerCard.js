@@ -1,15 +1,13 @@
 import Image from "next/image";
 import styles from "../styles/BurgerCard.module.css";
 
-const BurgerCard = () => {
+const BurgerCard = ({ burger }) => {
   return (
     <div className={styles.container}>
-      <Image src="/img/burger.webp" alt="" width="500" height="500" />
-      <h1 className={styles.title}>Cheetos Burgerrr</h1>
-      <span className={styles.price}>£19.90</span>
-      <p className={styles.desc}>
-        Our Specials
-      </p>
+      <Image src={burger.image} alt="" width="500" height="500" />
+      <h1 className={styles.title}>{burger.title}</h1>
+      <span className={styles.price}>£{burger.prices[0]}</span>
+      <p className={styles.desc}>{burger.description}</p>
     </div>
   );
 };
