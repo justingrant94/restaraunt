@@ -4,6 +4,7 @@ import Image from "next/image";
 import Featured from "../components/Featured";
 import BurgerList from "../components/BurgerList";
 import styles from "../styles/Home.module.css";
+import { useEffect } from "react";
 
 export default function Home({ burgerList }) {
   return (
